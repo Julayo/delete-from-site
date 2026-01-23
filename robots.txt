@@ -1,0 +1,3 @@
+User-agent: *
+Allow: /
+Sitemap: https://delete-from.com/sitemap.xml
