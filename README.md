@@ -84,3 +84,7 @@ Puedes completar la traduccion y ampliar con contenido real.
 
 ## Scripts utiles
 - `scripts/health-check.sh` para validar CORS y POST del formulario.
+
+
+---
+Deploy check: OK
