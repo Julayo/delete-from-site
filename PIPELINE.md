@@ -18,4 +18,13 @@ Este repo despliega a S3 en cada push a `main`.
 - Audience: `sts.amazonaws.com`
 - Role policy mínima: S3 sync + CloudFront invalidation
 
-Si quieres, te preparo el script para crear el role y la policy exacta.
+## Script automático
+Ejecuta el script para crear el provider, policy y role:
+
+```bash
+scripts/oidc-setup.sh
+```
+
+Luego en GitHub > Settings > Secrets and variables > Actions:
+- `AWS_ROLE_ARN` = (output del script)
+- `CLOUDFRONT_DISTRIBUTION_ID` = `E2UN2UG87AFRPM`
