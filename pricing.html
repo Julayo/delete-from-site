@@ -3,19 +3,19 @@
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>Estimaciones | DELETE FROM</title>
+    <title>Freemium | DELETE-FROM LABS</title>
     <meta
       name="description"
-      content="Estimaciones y alcance para proyectos de chatbots, apps a medida e integraciones IA."
+      content="Modelo freemium del laboratorio Delete-From Labs y formas de apoyar el proyecto."
     />
-    <meta name="theme-color" content="#0b0f14" />
+    <meta name="theme-color" content="#F8FAFC" />
     <link rel="canonical" href="https://delete-from.com/pricing" />
     <link rel="icon" href="assets/favicon.svg" type="image/svg+xml" />
     <link rel="stylesheet" href="styles.css" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
-      href="https://fonts.googleapis.com/css2?family=Sora:wght@300;400;500;600;700&display=swap"
+      href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;500;600;700&family=Space+Mono:wght@400;700&display=swap"
       rel="stylesheet"
     />
   </head>
@@ -23,19 +23,29 @@
     <header>
       <div class="container navbar">
         <a class="brand" href="index.html">
-          <img class="brand-logo" src="assets/logo-mark.svg" alt="Delete From logo" />
-          <span class="brand-text">DELETE FROM</span>
+          <img class="brand-logo" src="assets/logo-mark.svg" alt="Delete-From Labs" />
+          <span class="brand-text">DELETE-FROM LABS</span>
         </a>
         <nav class="nav-links" aria-label="Primary">
-          <a href="servicios.html">Servicios</a>
-          <a href="portfolio.html">Casos</a>
-          <a href="proceso.html">Proceso</a>
-          <a href="pricing.html">Pricing</a>
-          <a href="contacto.html">Contacto</a>
+          <a href="index.html">Home</a>
+          <a href="tools/index.html">Tools</a>
+          <a href="servicios.html">Lab</a>
+          <a href="portfolio.html">Experimentos</a>
+          <a href="index.html#ideas">Ideas</a>
+          <a href="index.html#support">Donar</a>
         </nav>
         <div class="nav-cta">
-          <a class="btn btn-secondary" href="servicios.html">Ver servicios</a>
-          <a class="btn btn-primary" href="contacto.html">Hablemos</a>
+        <button class="btn btn-ghost theme-toggle" type="button" data-theme-toggle aria-label="Cambiar tema" aria-pressed="false">
+          <svg class="theme-icon theme-sun" viewBox="0 0 24 24" aria-hidden="true">
+            <circle cx="12" cy="12" r="4"></circle>
+            <path d="M12 2v2M12 20v2M4.93 4.93l1.41 1.41M17.66 17.66l1.41 1.41M2 12h2M20 12h2M4.93 19.07l1.41-1.41M17.66 6.34l1.41-1.41"></path>
+          </svg>
+          <svg class="theme-icon theme-moon" viewBox="0 0 24 24" aria-hidden="true">
+            <path d="M21 12.8A9 9 0 1 1 11.2 3a7 7 0 0 0 9.8 9.8z"></path>
+          </svg>
+        </button>
+          <a class="btn btn-ghost" href="tools/index.html">Ver tools</a>
+          <a class="btn btn-primary" href="index.html#ideas">Dame tus ideas</a>
         </div>
       </div>
     </header>
@@ -43,68 +53,57 @@
     <main>
       <section class="page-hero">
         <div class="container">
-          <span class="tag">Estimaciones</span>
-          <h1>Alcance claro, cotización a medida.</h1>
+          <span class="tag">Freemium</span>
+          <h1>Gratis primero. Premium cuando suma.</h1>
           <p class="section-muted">
-            Cada proyecto se define por objetivos, data sources e integraciones. Te proponemos un
-            alcance y una estimación personalizada.
+            El laboratorio funciona con tools gratuitas y opciones premium para equipos que quieren
+            más.
           </p>
         </div>
       </section>
 
       <section class="section">
         <div class="container card-grid">
-          <article class="pricing-card reveal">
-            <h3>Chatbots para empresas</h3>
-            <p class="section-muted">
-              Alcance según complejidad, fuentes de datos y canales de atención.
-            </p>
-          </article>
-          <article class="pricing-card reveal">
-            <h3>Apps a medida</h3>
-            <p class="section-muted">
-              Estimación basada en flujos críticos, integraciones y niveles de acceso.
-            </p>
-          </article>
-          <article class="pricing-card reveal">
-            <h3>Integraciones IA</h3>
-            <p class="section-muted">
-              Definimos alcance por procesos, volumen y requerimientos de seguridad.
-            </p>
-          </article>
-        </div>
-      </section>
-
-      <section class="section">
-        <div class="container split">
-          <div class="reveal">
-            <h2>¿Qué incluye el servicio?</h2>
-            <p class="section-muted">
-              Taller inicial, arquitectura, despliegue, documentación y soporte post-lanzamiento.
-            </p>
-          </div>
-          <div class="card reveal">
-            <h3>Opcionales</h3>
+          <div class="pricing-card reveal">
+            <h3>Free</h3>
+            <p class="section-muted">Ideal para probar y usar sin fricción.</p>
             <ul>
-              <li>Soporte 24/7 y SRE.</li>
-              <li>Entrenamiento a equipos internos.</li>
-              <li>Optimización de costos cloud.</li>
-              <li>Auditoría de seguridad avanzada.</li>
+              <li>Descarga local inmediata.</li>
+              <li>Quick starts y docs cortas.</li>
+              <li>Uso personal y equipos pequeños.</li>
+            </ul>
+          </div>
+          <div class="pricing-card reveal">
+            <h3>Premium</h3>
+            <p class="section-muted">Para equipos que necesitan más potencia.</p>
+            <ul>
+              <li>Reportes avanzados o exportaciones.</li>
+              <li>Versiones hosted o integraciones.</li>
+              <li>Features de equipo y soporte.</li>
+            </ul>
+          </div>
+          <div class="pricing-card reveal">
+            <h3>Apoyo comunitario</h3>
+            <p class="section-muted">Donaciones y sponsors para mantener vivo el lab.</p>
+            <ul>
+              <li>Roadmap abierto y colaborativo.</li>
+              <li>Créditos a sponsors.</li>
+              <li>Financia nuevos prototipos.</li>
             </ul>
           </div>
         </div>
       </section>
 
       <section class="section">
-        <div class="container hero-panel reveal">
+        <div class="container callout">
           <div class="split">
             <div>
-              <h2>Armemos un presupuesto realista.</h2>
-              <p class="section-muted">Agenda una llamada y definimos alcance y prioridades.</p>
+              <h2>Apoya el laboratorio</h2>
+              <p class="section-muted">Si algo te sirvió, apóyalo para mantener el lab vivo.</p>
             </div>
             <div class="hero-cta">
-              <a class="btn btn-primary" href="contacto.html">Agendar llamada</a>
-              <a class="btn btn-secondary" href="servicios.html">Ver servicios</a>
+              <a class="btn btn-secondary" href="index.html#support">Cómprame un café ☕</a>
+              <a class="btn btn-ghost" href="index.html#support">Donar</a>
             </div>
           </div>
         </div>
@@ -115,27 +114,36 @@
       <div class="container footer-grid">
         <div>
           <div class="brand">
-            <img class="brand-logo" src="assets/logo-mark.svg" alt="Delete From logo" />
-            <span class="brand-text">DELETE FROM</span>
+            <img class="brand-logo" src="assets/logo-mark.svg" alt="Delete-From Labs" />
+            <span class="brand-text">DELETE-FROM LABS</span>
           </div>
-          <p class="section-muted">Soluciones IA con enfoque DevOps y seguridad.</p>
+          <p class="section-muted">Laboratorio de herramientas DevOps, Cloud y automatización.</p>
         </div>
         <div>
           <strong>Explorar</strong>
-          <div><a href="servicios.html">Servicios</a></div>
-          <div><a href="portfolio.html">Casos</a></div>
-          <div><a href="proceso.html">Proceso</a></div>
-          <div><a href="pricing.html">Pricing</a></div>
+          <div><a href="tools/index.html">Tools</a></div>
+          <div><a href="servicios.html">Lab</a></div>
+          <div><a href="portfolio.html">Experimentos</a></div>
         </div>
         <div>
-          <strong>Contacto</strong>
-          <div><a href="contacto.html">Formulario</a></div>
+          <strong>Ideas</strong>
+          <div><a href="index.html#ideas">Dame tus ideas</a></div>
           <div><a href="mailto:hello@delete-from.com">hello@delete-from.com</a></div>
+        </div>
+        <div>
+          <strong>Support</strong>
+          <div><a href="https://buymeacoffee.com/deletefrom">Cómprame un café ☕</a></div>
+          <div><a href="index.html#support">Donar</a></div>
+        </div>
+        <div>
+          <strong>Social</strong>
+          <div><a href="#">GitHub</a></div>
+          <div><a href="#">X / Twitter</a></div>
         </div>
         <div>
           <strong>Legal</strong>
           <div><a href="privacy.html">Aviso de privacidad</a></div>
-          <div class="section-muted">© 2026 DELETE FROM</div>
+          <div class="section-muted">© 2026 DELETE-FROM LABS</div>
         </div>
       </div>
     </footer>

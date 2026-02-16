@@ -3,19 +3,19 @@
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>Servicios IA | DELETE FROM</title>
+    <title>El Lab | DELETE-FROM LABS</title>
     <meta
       name="description"
-      content="Servicios principales de DELETE FROM: chatbots para empresas, aplicaciones a medida e integraciones IA con AWS."
+      content="Cómo funciona Delete-From Labs: prototipos rápidos, herramientas útiles y comunidad."
     />
-    <meta name="theme-color" content="#0b0f14" />
+    <meta name="theme-color" content="#F8FAFC" />
     <link rel="canonical" href="https://delete-from.com/servicios" />
     <link rel="icon" href="assets/favicon.svg" type="image/svg+xml" />
     <link rel="stylesheet" href="styles.css" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
-      href="https://fonts.googleapis.com/css2?family=Sora:wght@300;400;500;600;700&display=swap"
+      href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;500;600;700&family=Space+Mono:wght@400;700&display=swap"
       rel="stylesheet"
     />
   </head>
@@ -23,19 +23,29 @@
     <header>
       <div class="container navbar">
         <a class="brand" href="index.html">
-          <img class="brand-logo" src="assets/logo-mark.svg" alt="Delete From logo" />
-          <span class="brand-text">DELETE FROM</span>
+          <img class="brand-logo" src="assets/logo-mark.svg" alt="Delete-From Labs" />
+          <span class="brand-text">DELETE-FROM LABS</span>
         </a>
         <nav class="nav-links" aria-label="Primary">
-          <a href="servicios.html">Servicios</a>
-          <a href="portfolio.html">Casos</a>
-          <a href="proceso.html">Proceso</a>
-          <a href="pricing.html">Pricing</a>
-          <a href="contacto.html">Contacto</a>
+          <a href="index.html">Home</a>
+          <a href="tools/index.html">Tools</a>
+          <a href="servicios.html">Lab</a>
+          <a href="portfolio.html">Experimentos</a>
+          <a href="index.html#ideas">Ideas</a>
+          <a href="index.html#support">Donar</a>
         </nav>
         <div class="nav-cta">
-          <a class="btn btn-secondary" href="index.html">Inicio</a>
-          <a class="btn btn-primary" href="contacto.html">Hablemos</a>
+        <button class="btn btn-ghost theme-toggle" type="button" data-theme-toggle aria-label="Cambiar tema" aria-pressed="false">
+          <svg class="theme-icon theme-sun" viewBox="0 0 24 24" aria-hidden="true">
+            <circle cx="12" cy="12" r="4"></circle>
+            <path d="M12 2v2M12 20v2M4.93 4.93l1.41 1.41M17.66 17.66l1.41 1.41M2 12h2M20 12h2M4.93 19.07l1.41-1.41M17.66 6.34l1.41-1.41"></path>
+          </svg>
+          <svg class="theme-icon theme-moon" viewBox="0 0 24 24" aria-hidden="true">
+            <path d="M21 12.8A9 9 0 1 1 11.2 3a7 7 0 0 0 9.8 9.8z"></path>
+          </svg>
+        </button>
+          <a class="btn btn-ghost" href="tools/index.html">Ver tools</a>
+          <a class="btn btn-primary" href="index.html#ideas">Dame tus ideas</a>
         </div>
       </div>
     </header>
@@ -43,82 +53,61 @@
     <main>
       <section class="page-hero">
         <div class="container">
-          <span class="tag">Servicios</span>
-          <h1>IA aplicada con foco en resultados.</h1>
+          <span class="tag">El Lab</span>
+          <h1>Un laboratorio cálido y práctico.</h1>
           <p class="section-muted">
-            Tres líneas claras: chatbots, apps a medida e integraciones IA para automatizar y crecer.
+            Construimos mini tools para DevOps, Cloud y automatización con enfoque real en ahorrar
+            tiempo.
           </p>
         </div>
       </section>
 
-      <section class="section" id="chatbots">
+      <section class="section">
         <div class="container split">
           <div class="reveal">
-            <h2>Chatbots para empresas y equipos</h2>
+            <h2>Cómo trabajamos</h2>
             <p class="section-muted">
-              Bots con contexto, entrenamiento y analítica para soporte, ventas internas y atención
-              al cliente. Integración con CRM, FAQs y documentación interna.
+              Partimos de ideas reales, prototipamos rápido y liberamos versiones que puedas usar hoy.
             </p>
-            <div class="hero-cta">
-              <a class="btn btn-primary" href="contacto.html">Quiero un chatbot</a>
-            </div>
           </div>
-          <div class="card reveal">
-            <h3>Incluye</h3>
-            <ul>
-              <li>Onboarding con data sources y RAG.</li>
-              <li>Flujos conversacionales + handoff humano.</li>
-              <li>Métricas de uso y feedback continuo.</li>
-              <li>Deploy seguro en AWS.</li>
-            </ul>
+          <div class="steps">
+            <div class="step reveal"><span>01</span>Idea concreta + dolor claro.</div>
+            <div class="step reveal"><span>02</span>Prototype rápido y quick start.</div>
+            <div class="step reveal"><span>03</span>Feedback y ajustes ligeros.</div>
+            <div class="step reveal"><span>04</span>Freemium honesto + extras premium.</div>
+            <div class="step reveal"><span>05</span>Documentación clara y roadmap abierto.</div>
           </div>
         </div>
       </section>
 
-      <section class="section" id="apps">
-        <div class="container split">
-          <div class="reveal">
-            <h2>Aplicaciones a medida</h2>
-            <p class="section-muted">
-              Soluciones front + back personalizadas para operaciones, clientes o equipos internos.
-              Diseño UX centrado en claridad y eficiencia.
-            </p>
-            <div class="hero-cta">
-              <a class="btn btn-primary" href="contacto.html">Necesito una app</a>
-            </div>
-          </div>
-          <div class="card reveal">
-            <h3>Incluye</h3>
-            <ul>
-              <li>UI/UX, prototipos y design system.</li>
-              <li>APIs seguras y escalables.</li>
-              <li>Dashboards y reportes críticos.</li>
-              <li>Automatización con IA integrada.</li>
-            </ul>
-          </div>
+      <section class="section">
+        <div class="container card-grid">
+          <article class="card reveal">
+            <h3>Lightweight by default</h3>
+            <p>Scripts y herramientas listas para correr local o en CI sin dependencias pesadas.</p>
+          </article>
+          <article class="card reveal">
+            <h3>Documentación corta</h3>
+            <p>Quick starts y ejemplos claros para llegar a resultados rápido.</p>
+          </article>
+          <article class="card reveal">
+            <h3>Comunidad first</h3>
+            <p>Las mejores ideas llegan de tu feedback y necesidades reales.</p>
+          </article>
         </div>
       </section>
 
-      <section class="section" id="ia">
-        <div class="container split">
-          <div class="reveal">
-            <h2>Integraciones IA</h2>
-            <p class="section-muted">
-              Automatizamos procesos y conectamos IA con tus herramientas actuales. RAG, workflows
-              y conectores a CRM, ERP, data lakes o APIs privadas.
-            </p>
-            <div class="hero-cta">
-              <a class="btn btn-primary" href="contacto.html">Integrar IA</a>
+      <section class="section">
+        <div class="container callout">
+          <div class="split">
+            <div>
+              <h2>¿Quieres impulsar un experimento?</h2>
+              <p class="section-muted">Comparte tu idea o apoya el lab para acelerar el roadmap.</p>
             </div>
-          </div>
-          <div class="card reveal">
-            <h3>Incluye</h3>
-            <ul>
-              <li>Auditoría de procesos y quick wins.</li>
-              <li>Orquestación serverless y event-driven.</li>
-              <li>Observabilidad, logging y alertas.</li>
-              <li>Seguridad y cumplimiento.</li>
-            </ul>
+            <div class="hero-cta">
+              <a class="btn btn-primary" href="index.html#ideas">Dame tus ideas</a>
+              <a class="btn btn-ghost" href="index.html#support">Apoyar el lab</a>
+            </div>
           </div>
         </div>
       </section>
@@ -128,27 +117,36 @@
       <div class="container footer-grid">
         <div>
           <div class="brand">
-            <img class="brand-logo" src="assets/logo-mark.svg" alt="Delete From logo" />
-            <span class="brand-text">DELETE FROM</span>
+            <img class="brand-logo" src="assets/logo-mark.svg" alt="Delete-From Labs" />
+            <span class="brand-text">DELETE-FROM LABS</span>
           </div>
-          <p class="section-muted">Soluciones IA con enfoque DevOps y seguridad.</p>
+          <p class="section-muted">Laboratorio de herramientas DevOps, Cloud y automatización.</p>
         </div>
         <div>
           <strong>Explorar</strong>
-          <div><a href="servicios.html">Servicios</a></div>
-          <div><a href="portfolio.html">Casos</a></div>
-          <div><a href="proceso.html">Proceso</a></div>
-          <div><a href="pricing.html">Pricing</a></div>
+          <div><a href="tools/index.html">Tools</a></div>
+          <div><a href="servicios.html">Lab</a></div>
+          <div><a href="portfolio.html">Experimentos</a></div>
         </div>
         <div>
-          <strong>Contacto</strong>
-          <div><a href="contacto.html">Formulario</a></div>
+          <strong>Ideas</strong>
+          <div><a href="index.html#ideas">Dame tus ideas</a></div>
           <div><a href="mailto:hello@delete-from.com">hello@delete-from.com</a></div>
+        </div>
+        <div>
+          <strong>Support</strong>
+          <div><a href="https://buymeacoffee.com/deletefrom">Cómprame un café ☕</a></div>
+          <div><a href="index.html#support">Donar</a></div>
+        </div>
+        <div>
+          <strong>Social</strong>
+          <div><a href="#">GitHub</a></div>
+          <div><a href="#">X / Twitter</a></div>
         </div>
         <div>
           <strong>Legal</strong>
           <div><a href="privacy.html">Aviso de privacidad</a></div>
-          <div class="section-muted">© 2026 DELETE FROM</div>
+          <div class="section-muted">© 2026 DELETE-FROM LABS</div>
         </div>
       </div>
     </footer>

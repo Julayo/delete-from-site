@@ -3,19 +3,19 @@
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>Contacto | DELETE FROM</title>
+    <title>Dame tus ideas | DELETE-FROM LABS</title>
     <meta
       name="description"
-      content="Hablemos sobre tu proyecto de chatbots, apps a medida o integraciones IA."
+      content="Comparte tu idea de herramienta DevOps y la prototipamos en Delete-From Labs."
     />
-    <meta name="theme-color" content="#0b0f14" />
+    <meta name="theme-color" content="#F8FAFC" />
     <link rel="canonical" href="https://delete-from.com/contacto" />
     <link rel="icon" href="assets/favicon.svg" type="image/svg+xml" />
     <link rel="stylesheet" href="styles.css" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
-      href="https://fonts.googleapis.com/css2?family=Sora:wght@300;400;500;600;700&display=swap"
+      href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;500;600;700&family=Space+Mono:wght@400;700&display=swap"
       rel="stylesheet"
     />
   </head>
@@ -23,19 +23,27 @@
     <header>
       <div class="container navbar">
         <a class="brand" href="index.html">
-          <img class="brand-logo" src="assets/logo-mark.svg" alt="Delete From logo" />
-          <span class="brand-text">DELETE FROM</span>
+          <img class="brand-logo" src="assets/logo-mark.svg" alt="Delete-From Labs" />
+          <span class="brand-text">DELETE-FROM LABS</span>
         </a>
         <nav class="nav-links" aria-label="Primary">
-          <a href="servicios.html">Servicios</a>
-          <a href="portfolio.html">Casos</a>
-          <a href="proceso.html">Proceso</a>
-          <a href="pricing.html">Pricing</a>
+          <a href="index.html#proyectos">Proyectos</a>
+          <a href="index.html#asesorias">Asesorías</a>
+          <a href="blog.html">Blog</a>
           <a href="contacto.html">Contacto</a>
         </nav>
         <div class="nav-cta">
-          <a class="btn btn-secondary" href="servicios.html">Ver servicios</a>
-          <a class="btn btn-primary" href="contacto.html">Hablemos</a>
+          <button class="btn btn-ghost theme-toggle" type="button" data-theme-toggle aria-label="Cambiar tema" aria-pressed="false">
+            <svg class="theme-icon theme-sun" viewBox="0 0 24 24" aria-hidden="true">
+              <circle cx="12" cy="12" r="4"></circle>
+              <path d="M12 2v2M12 20v2M4.93 4.93l1.41 1.41M17.66 17.66l1.41 1.41M2 12h2M20 12h2M4.93 19.07l1.41-1.41M17.66 6.34l1.41-1.41"></path>
+            </svg>
+            <svg class="theme-icon theme-moon" viewBox="0 0 24 24" aria-hidden="true">
+              <path d="M21 12.8A9 9 0 1 1 11.2 3a7 7 0 0 0 9.8 9.8z"></path>
+            </svg>
+          </button>
+          <a class="btn btn-ghost" href="https://buymeacoffee.com/deletefrom" target="_blank" rel="noopener">☕ Café</a>
+          <a class="btn btn-primary" href="contacto.html">Dame tu idea</a>
         </div>
       </div>
     </header>
@@ -43,28 +51,25 @@
     <main>
       <section class="page-hero">
         <div class="container">
-          <span class="tag">Contacto</span>
-          <h1>Conversemos sobre tu proyecto.</h1>
-          <p class="section-muted">
-            Respondemos en menos de 24 horas hábiles. Tu información es confidencial.
-          </p>
+          <span class="tag">Dame tus ideas</span>
+          <h1>¿Qué herramienta te ahorraría horas?</h1>
+          <p class="section-muted">Cuéntame y la prototipamos. Respuesta rápida y cero spam.</p>
         </div>
       </section>
 
       <section class="section">
         <div class="container split">
           <div class="reveal">
-            <h2>Cuéntanos qué necesitas</h2>
+            <h2>Cuéntanos tu dolor real</h2>
             <p class="section-muted">
-              Podemos ayudarte con chatbots, apps a medida e integraciones IA. Deja el contexto y
-              te proponemos un plan.
+              Mientras más contexto compartas, más rápido podemos diseñar un MVP útil.
             </p>
             <div class="card">
               <h3>Microcopy</h3>
               <p class="section-muted">
                 - Tiempo de respuesta: 24h hábiles.<br />
                 - Privacidad: usamos tus datos solo para contactarte.<br />
-                - Sin spam ni newsletters.
+                - Sin newsletters ni spam.
               </p>
             </div>
           </div>
@@ -78,37 +83,45 @@
               </div>
 
               <div>
-                <label for="name">Nombre completo</label>
-                <input id="name" name="name" type="text" autocomplete="name" required />
+                <label for="name">Nombre (opcional)</label>
+                <input id="name" name="name" type="text" autocomplete="name" />
               </div>
 
               <div>
-                <label for="email">Email</label>
-                <input id="email" name="email" type="email" autocomplete="email" required />
+                <label for="email">Email (opcional, recomendado)</label>
+                <input id="email" name="email" type="email" autocomplete="email" />
               </div>
 
               <div>
-                <label for="topic">Tema</label>
+                <label for="topic">Categoría</label>
                 <select id="topic" name="topic">
-                  <option value="general">General</option>
-                  <option value="chatbots">Chatbots</option>
-                  <option value="apps">Apps a medida</option>
-                  <option value="ia">Integraciones IA</option>
+                  <option value="app">App / Producto</option>
+                  <option value="devops">DevOps</option>
+                  <option value="aws">AWS / Cloud</option>
+                  <option value="automation">Automatización</option>
+                  <option value="hardware">IoT / Hardware</option>
+                  <option value="ai">AI / Chatbots</option>
+                  <option value="other">Otro</option>
                 </select>
               </div>
 
               <div>
-                <label for="message">Mensaje</label>
+                <label for="message">Idea</label>
                 <textarea
                   id="message"
                   name="message"
                   maxlength="1200"
                   required
-                  placeholder="Cuéntanos objetivos, contexto y plazos."
+                  placeholder="Cuéntanos el problema, contexto y el resultado ideal."
                 ></textarea>
               </div>
 
-              <button id="form-submit" class="btn btn-primary" type="submit">Enviar</button>
+              <label class="checkbox">
+                <input type="checkbox" name="premium" />
+                ¿Te gustaría versión premium?
+              </label>
+
+              <button id="form-submit" class="btn btn-primary" type="submit">Enviar idea</button>
               <div id="form-status" class="form-status" role="status" aria-live="polite"></div>
             </form>
           </div>
@@ -120,27 +133,30 @@
       <div class="container footer-grid">
         <div>
           <div class="brand">
-            <img class="brand-logo" src="assets/logo-mark.svg" alt="Delete From logo" />
-            <span class="brand-text">DELETE FROM</span>
+            <img class="brand-logo" src="assets/logo-mark.svg" alt="Delete-From Labs" />
+            <span class="brand-text">DELETE-FROM LABS</span>
           </div>
-          <p class="section-muted">Soluciones IA con enfoque DevOps y seguridad.</p>
+          <p class="section-muted" style="margin-top: 0.75rem; font-size: 0.875rem;">Un lab de tecnología. Apps, automatización y hardware.</p>
         </div>
         <div>
           <strong>Explorar</strong>
-          <div><a href="servicios.html">Servicios</a></div>
-          <div><a href="portfolio.html">Casos</a></div>
-          <div><a href="proceso.html">Proceso</a></div>
-          <div><a href="pricing.html">Pricing</a></div>
+          <div><a href="index.html#proyectos">Proyectos</a></div>
+          <div><a href="index.html#asesorias">Asesorías</a></div>
+          <div><a href="blog.html">Blog</a></div>
         </div>
         <div>
           <strong>Contacto</strong>
-          <div><a href="contacto.html">Formulario</a></div>
+          <div><a href="contacto.html">Dame tu idea</a></div>
           <div><a href="mailto:hello@delete-from.com">hello@delete-from.com</a></div>
+        </div>
+        <div>
+          <strong>Apoyar</strong>
+          <div><a href="https://buymeacoffee.com/deletefrom" target="_blank" rel="noopener">☕ Cómprame un café</a></div>
         </div>
         <div>
           <strong>Legal</strong>
           <div><a href="privacy.html">Aviso de privacidad</a></div>
-          <div class="section-muted">© 2026 DELETE FROM</div>
+          <div class="section-muted">© 2026 DELETE-FROM LABS</div>
         </div>
       </div>
     </footer>

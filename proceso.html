@@ -3,19 +3,19 @@
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>Proceso | DELETE FROM</title>
+    <title>Proceso del Lab | DELETE-FROM LABS</title>
     <meta
       name="description"
-      content="Proceso de trabajo de DELETE FROM: diagnóstico, arquitectura, prototipo, entrega e iteración continua."
+      content="Proceso ligero para convertir ideas DevOps en mini tools en Delete-From Labs."
     />
-    <meta name="theme-color" content="#0b0f14" />
+    <meta name="theme-color" content="#F8FAFC" />
     <link rel="canonical" href="https://delete-from.com/proceso" />
     <link rel="icon" href="assets/favicon.svg" type="image/svg+xml" />
     <link rel="stylesheet" href="styles.css" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
-      href="https://fonts.googleapis.com/css2?family=Sora:wght@300;400;500;600;700&display=swap"
+      href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;500;600;700&family=Space+Mono:wght@400;700&display=swap"
       rel="stylesheet"
     />
   </head>
@@ -23,19 +23,29 @@
     <header>
       <div class="container navbar">
         <a class="brand" href="index.html">
-          <img class="brand-logo" src="assets/logo-mark.svg" alt="Delete From logo" />
-          <span class="brand-text">DELETE FROM</span>
+          <img class="brand-logo" src="assets/logo-mark.svg" alt="Delete-From Labs" />
+          <span class="brand-text">DELETE-FROM LABS</span>
         </a>
         <nav class="nav-links" aria-label="Primary">
-          <a href="servicios.html">Servicios</a>
-          <a href="portfolio.html">Casos</a>
-          <a href="proceso.html">Proceso</a>
-          <a href="pricing.html">Pricing</a>
-          <a href="contacto.html">Contacto</a>
+          <a href="index.html">Home</a>
+          <a href="tools/index.html">Tools</a>
+          <a href="servicios.html">Lab</a>
+          <a href="portfolio.html">Experimentos</a>
+          <a href="index.html#ideas">Ideas</a>
+          <a href="index.html#support">Donar</a>
         </nav>
         <div class="nav-cta">
-          <a class="btn btn-secondary" href="servicios.html">Ver servicios</a>
-          <a class="btn btn-primary" href="contacto.html">Hablemos</a>
+        <button class="btn btn-ghost theme-toggle" type="button" data-theme-toggle aria-label="Cambiar tema" aria-pressed="false">
+          <svg class="theme-icon theme-sun" viewBox="0 0 24 24" aria-hidden="true">
+            <circle cx="12" cy="12" r="4"></circle>
+            <path d="M12 2v2M12 20v2M4.93 4.93l1.41 1.41M17.66 17.66l1.41 1.41M2 12h2M20 12h2M4.93 19.07l1.41-1.41M17.66 6.34l1.41-1.41"></path>
+          </svg>
+          <svg class="theme-icon theme-moon" viewBox="0 0 24 24" aria-hidden="true">
+            <path d="M21 12.8A9 9 0 1 1 11.2 3a7 7 0 0 0 9.8 9.8z"></path>
+          </svg>
+        </button>
+          <a class="btn btn-ghost" href="tools/index.html">Ver tools</a>
+          <a class="btn btn-primary" href="index.html#ideas">Dame tus ideas</a>
         </div>
       </div>
     </header>
@@ -44,54 +54,58 @@
       <section class="page-hero">
         <div class="container">
           <span class="tag">Proceso</span>
-          <h1>Entrega clara, iteración constante.</h1>
+          <h1>Del problema al script útil.</h1>
           <p class="section-muted">
-            Trabajamos con ciclos cortos, visibilidad total y foco en impacto real.
+            Un flujo rápido, claro y práctico para convertir ideas en herramientas listas para usar.
           </p>
-        </div>
-      </section>
-
-      <section class="section">
-        <div class="container steps">
-          <div class="step reveal"><span>01</span>Diagnóstico y objetivos de negocio.</div>
-          <div class="step reveal"><span>02</span>Arquitectura cloud y definición de data flows.</div>
-          <div class="step reveal"><span>03</span>Prototipo funcional + validación con usuarios.</div>
-          <div class="step reveal"><span>04</span>Desarrollo incremental y despliegue continuo.</div>
-          <div class="step reveal"><span>05</span>Optimización, métricas y evolución IA.</div>
         </div>
       </section>
 
       <section class="section">
         <div class="container split">
           <div class="reveal">
-            <h2>Transparencia y control.</h2>
+            <h2>Cómo iteramos</h2>
             <p class="section-muted">
-              Acceso a tableros, documentación y métricas para que siempre sepas dónde está el
-              proyecto.
+              En el lab nos movemos rápido: prototipo, feedback y release continuo.
             </p>
           </div>
-          <div class="card reveal">
-            <h3>Entregables</h3>
-            <ul>
-              <li>Roadmap y backlog priorizado.</li>
-              <li>Arquitectura e infraestructura como código.</li>
-              <li>Documentación y handover técnico.</li>
-              <li>KPIs para medir conversión y eficiencia.</li>
-            </ul>
+          <div class="steps">
+            <div class="step reveal"><span>01</span>Idea con contexto real.</div>
+            <div class="step reveal"><span>02</span>Prototipo simple y funcional.</div>
+            <div class="step reveal"><span>03</span>Quick start y docs rápidas.</div>
+            <div class="step reveal"><span>04</span>Feedback de la comunidad.</div>
+            <div class="step reveal"><span>05</span>Mejoras, premium y soporte.</div>
           </div>
         </div>
       </section>
 
       <section class="section">
-        <div class="container hero-panel reveal">
+        <div class="container card-grid">
+          <article class="card reveal">
+            <h3>Validación corta</h3>
+            <p>Probamos con casos reales antes de ampliar features.</p>
+          </article>
+          <article class="card reveal">
+            <h3>Documentación clara</h3>
+            <p>Quick starts listos para copiar y pegar.</p>
+          </article>
+          <article class="card reveal">
+            <h3>Roadmap visible</h3>
+            <p>Lo que sigue depende de tus ideas y apoyo.</p>
+          </article>
+        </div>
+      </section>
+
+      <section class="section">
+        <div class="container callout">
           <div class="split">
             <div>
-              <h2>Iniciemos con un diagnóstico.</h2>
-              <p class="section-muted">Agenda una llamada y revisamos objetivos y alcance.</p>
+              <h2>¿Listo para proponer tu idea?</h2>
+              <p class="section-muted">Cuéntanos qué tool te ahorraría horas.</p>
             </div>
             <div class="hero-cta">
-              <a class="btn btn-primary" href="contacto.html">Agendar llamada</a>
-              <a class="btn btn-secondary" href="pricing.html">Ver pricing</a>
+              <a class="btn btn-primary" href="index.html#ideas">Dame tus ideas</a>
+              <a class="btn btn-ghost" href="index.html#support">Apoyar el lab</a>
             </div>
           </div>
         </div>
@@ -102,27 +116,36 @@
       <div class="container footer-grid">
         <div>
           <div class="brand">
-            <img class="brand-logo" src="assets/logo-mark.svg" alt="Delete From logo" />
-            <span class="brand-text">DELETE FROM</span>
+            <img class="brand-logo" src="assets/logo-mark.svg" alt="Delete-From Labs" />
+            <span class="brand-text">DELETE-FROM LABS</span>
           </div>
-          <p class="section-muted">Soluciones IA con enfoque DevOps y seguridad.</p>
+          <p class="section-muted">Laboratorio de herramientas DevOps, Cloud y automatización.</p>
         </div>
         <div>
           <strong>Explorar</strong>
-          <div><a href="servicios.html">Servicios</a></div>
-          <div><a href="portfolio.html">Casos</a></div>
-          <div><a href="proceso.html">Proceso</a></div>
-          <div><a href="pricing.html">Pricing</a></div>
+          <div><a href="tools/index.html">Tools</a></div>
+          <div><a href="servicios.html">Lab</a></div>
+          <div><a href="portfolio.html">Experimentos</a></div>
         </div>
         <div>
-          <strong>Contacto</strong>
-          <div><a href="contacto.html">Formulario</a></div>
+          <strong>Ideas</strong>
+          <div><a href="index.html#ideas">Dame tus ideas</a></div>
           <div><a href="mailto:hello@delete-from.com">hello@delete-from.com</a></div>
+        </div>
+        <div>
+          <strong>Support</strong>
+          <div><a href="https://buymeacoffee.com/deletefrom">Cómprame un café ☕</a></div>
+          <div><a href="index.html#support">Donar</a></div>
+        </div>
+        <div>
+          <strong>Social</strong>
+          <div><a href="#">GitHub</a></div>
+          <div><a href="#">X / Twitter</a></div>
         </div>
         <div>
           <strong>Legal</strong>
           <div><a href="privacy.html">Aviso de privacidad</a></div>
-          <div class="section-muted">© 2026 DELETE FROM</div>
+          <div class="section-muted">© 2026 DELETE-FROM LABS</div>
         </div>
       </div>
     </footer>
