@@ -125,6 +125,14 @@ html[data-theme="dark"] header {
   background: rgba(19, 18, 16, 0.92);
 }
 
+header.scrolled {
+  box-shadow: 0 2px 16px rgba(26, 25, 22, 0.09);
+}
+
+html[data-theme="dark"] header.scrolled {
+  box-shadow: 0 2px 16px rgba(0, 0, 0, 0.4);
+}
+
 .navbar {
   display: flex;
   align-items: center;
@@ -142,7 +150,7 @@ html[data-theme="dark"] header {
 }
 
 .brand-logo {
-  height: 56px;
+  height: 72px;
   width: auto;
   display: block;
 }

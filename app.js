@@ -402,6 +402,15 @@ const observer = new IntersectionObserver(
 
 document.querySelectorAll(".reveal").forEach((el) => observer.observe(el));
 
+// Sticky header shadow on scroll
+(function () {
+  const header = document.querySelector("header");
+  if (!header) return;
+  const onScroll = () => header.classList.toggle("scrolled", window.scrollY > 8);
+  window.addEventListener("scroll", onScroll, { passive: true });
+  onScroll();
+})();
+
 renderFeaturedTools();
 renderToolsIndex();
 renderToolDetail();
