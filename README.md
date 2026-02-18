@@ -71,9 +71,7 @@ Si en el futuro el catálogo de tools crece significativamente o se añade auth/
 **CORS Lambda:** configura `ALLOWED_ORIGINS` con `https://delete-from.com`.
 
 **Leads admin (no exponer en frontend):**
-```bash
-curl -H "x-admin-token: TU_TOKEN" \
-  "https://zcrpvb8zn1.execute-api.us-west-2.amazonaws.com/prod/leads?limit=50"
+
 ```
 
 ---
