@@ -3,60 +3,43 @@
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>404 | DELETE-FROM LABS</title>
+    <title>404 | DELETE-FROM STUDIO</title>
     <meta name="description" content="Página no encontrada." />
-    <meta name="theme-color" content="#F8FAFC" />
+    <meta name="theme-color" content="#0f0f0f" />
     <link rel="icon" href="assets/favicon.svg" type="image/svg+xml" />
-    <link rel="stylesheet" href="styles.css" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
-      href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;500;600;700&family=Space+Mono:wght@400;700&display=swap"
+      href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap"
       rel="stylesheet"
     />
+    <link rel="stylesheet" href="styles.css" />
   </head>
   <body>
-    <header>
-      <div class="container navbar">
-        <a class="brand" href="index.html">
-          <img class="brand-logo brand-logo-light" src="assets/logo_modo_claro.png" alt="Delete-From Labs" />
-          <img class="brand-logo brand-logo-dark" src="assets/logo_modo_oscuro.png" alt="Delete-From Labs" aria-hidden="true" />
-          <span class="brand-text">DELETE-FROM LABS</span>
-        </a>
-        <nav class="nav-links" aria-label="Primary">
-          <a href="index.html#proyectos">Proyectos</a>
-          <a href="index.html#asesorias">Asesorías</a>
-          <a href="blog.html">Blog</a>
-          <a href="index.html#contacto">Contacto</a>
-        </nav>
-        <div class="nav-cta">
-          <button class="btn btn-ghost theme-toggle" type="button" data-theme-toggle aria-label="Cambiar tema" aria-pressed="false">
-            <svg class="theme-icon theme-sun" viewBox="0 0 24 24" aria-hidden="true">
-              <circle cx="12" cy="12" r="4"></circle>
-              <path d="M12 2v2M12 20v2M4.93 4.93l1.41 1.41M17.66 17.66l1.41 1.41M2 12h2M20 12h2M4.93 19.07l1.41-1.41M17.66 6.34l1.41-1.41"></path>
-            </svg>
-            <svg class="theme-icon theme-moon" viewBox="0 0 24 24" aria-hidden="true">
-              <path d="M21 12.8A9 9 0 1 1 11.2 3a7 7 0 0 0 9.8 9.8z"></path>
-            </svg>
-          </button>
-        </div>
-      </div>
+    <header id="site-header">
+      <nav class="nav-inner">
+        <a class="logo" href="index.html">DELETE-FROM<br>STUDIO</a>
+        <ul class="nav-links" aria-label="Primary navigation">
+          <li><a href="index.html#games">Juegos</a></li>
+          <li><a href="index.html#about">About</a></li>
+          <li><a href="index.html#contact">Contacto</a></li>
+        </ul>
+      </nav>
     </header>
 
     <main>
-      <section class="page-hero">
-        <div class="container">
-          <span class="tag">404</span>
-          <h1>Esta página no existe.</h1>
-          <p class="section-muted">Vuelve al inicio o explora lo que hemos construido.</p>
-          <div class="hero-cta">
-            <a class="btn btn-primary" href="index.html">Ir al inicio</a>
-            <a class="btn btn-ghost" href="index.html#proyectos">Ver proyectos</a>
+      <section class="section" style="min-height: 70vh; display: flex; align-items: center;">
+        <div class="section-inner section-inner--center" style="width: 100%;">
+          <h2 style="font-size: 2rem; margin-bottom: 1.5rem;">404</h2>
+          <p style="color: var(--muted); font-size: 0.8rem; margin-bottom: 2.5rem; letter-spacing: 0.08em;">
+            Esta página no existe.
+          </p>
+          <div class="cta-group" style="justify-content: center;">
+            <a class="btn btn-primary" href="index.html">← Volver al inicio</a>
+            <a class="btn btn-ghost" href="index.html#games">Ver juegos</a>
           </div>
         </div>
       </section>
     </main>
-
-    <script src="app.js" defer></script>
   </body>
 </html>
