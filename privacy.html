@@ -3,104 +3,78 @@
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>Aviso de privacidad | DELETE-FROM LABS</title>
-    <meta name="description" content="Aviso de privacidad de Delete-From Labs." />
-    <meta name="theme-color" content="#F8FAFC" />
+    <title>Privacidad | DELETE-FROM STUDIO</title>
+    <meta name="description" content="Aviso de privacidad de DELETE-FROM STUDIO. Sitio estático, sin tracking." />
+    <meta name="theme-color" content="#0f0f0f" />
     <link rel="canonical" href="https://delete-from.com/privacy" />
     <link rel="icon" href="assets/favicon.svg" type="image/svg+xml" />
-    <link rel="stylesheet" href="styles.css" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
-      href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;500;600;700&family=Space+Mono:wght@400;700&display=swap"
+      href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap"
       rel="stylesheet"
     />
+    <link rel="stylesheet" href="styles.css" />
   </head>
   <body>
-    <header>
-      <div class="container navbar">
-        <a class="brand" href="index.html">
-          <img class="brand-logo brand-logo-light" src="assets/logo_modo_claro.png" alt="Delete-From Labs" />
-          <img class="brand-logo brand-logo-dark" src="assets/logo_modo_oscuro.png" alt="Delete-From Labs" aria-hidden="true" />
-          <span class="brand-text">DELETE-FROM LABS</span>
-        </a>
-        <nav class="nav-links" aria-label="Primary">
-          <a href="index.html#proyectos">Proyectos</a>
-          <a href="index.html#asesorias">Asesorías</a>
-          <a href="blog.html">Blog</a>
-          <a href="index.html#contacto">Contacto</a>
-        </nav>
-        <div class="nav-cta">
-          <button class="btn btn-ghost theme-toggle" type="button" data-theme-toggle aria-label="Cambiar tema" aria-pressed="false">
-            <svg class="theme-icon theme-sun" viewBox="0 0 24 24" aria-hidden="true">
-              <circle cx="12" cy="12" r="4"></circle>
-              <path d="M12 2v2M12 20v2M4.93 4.93l1.41 1.41M17.66 17.66l1.41 1.41M2 12h2M20 12h2M4.93 19.07l1.41-1.41M17.66 6.34l1.41-1.41"></path>
-            </svg>
-            <svg class="theme-icon theme-moon" viewBox="0 0 24 24" aria-hidden="true">
-              <path d="M21 12.8A9 9 0 1 1 11.2 3a7 7 0 0 0 9.8 9.8z"></path>
-            </svg>
-          </button>
-        </div>
-      </div>
+
+    <header id="site-header">
+      <nav class="nav-inner">
+        <a class="logo" href="index.html" aria-label="DELETE-FROM STUDIO">DELETE-FROM<br>STUDIO</a>
+        <ul class="nav-links" aria-label="Primary navigation">
+          <li><a href="index.html#games" data-i18n="nav.games">Juegos</a></li>
+          <li><a href="index.html#about" data-i18n="nav.about">About</a></li>
+          <li><a href="devlog.html" data-i18n="nav.devlog">Devlog</a></li>
+          <li><a href="index.html#contact" data-i18n="nav.contact">Contacto</a></li>
+        </ul>
+        <button id="lang-toggle" type="button" aria-label="Switch language">EN</button>
+      </nav>
     </header>
 
     <main>
-      <section class="page-hero">
-        <div class="container">
-          <span class="tag">Privacidad</span>
-          <h1>Aviso de privacidad.</h1>
-          <p class="section-muted">Cuidamos tus datos y solo los usamos para responder tus ideas.</p>
+      <section class="hero">
+        <div class="hero-inner">
+          <p class="hero-tag" data-i18n="privacy.tag">aviso de privacidad</p>
+          <h1 class="hero-title">// PRIVACIDAD</h1>
         </div>
       </section>
 
       <section class="section">
-        <div class="container card">
-          <h2>Resumen</h2>
-          <p class="section-muted">
-            Usamos la información del formulario únicamente para contestar tus ideas o solicitudes.
-            No compartimos datos con terceros ni enviamos newsletters sin tu permiso.
-          </p>
-          <h3>Datos que recopilamos</h3>
-          <ul>
-            <li>Nombre (opcional).</li>
-            <li>Email (opcional, recomendado).</li>
-            <li>Idea o mensaje que nos compartas.</li>
-          </ul>
-          <h3>Contacto</h3>
-          <p class="section-muted">Para dudas escribe a hello@delete-from.com.</p>
+        <div class="section-inner">
+          <div class="devlog-post">
+            <div class="devlog-body">
+              <p data-i18n="privacy.intro">
+                Esto es un sitio estático. No usamos analytics, no ponemos cookies de
+                seguimiento, y no recopilamos datos de navegación.
+              </p>
+              <h3 data-i18n="privacy.contactTitle">&gt; Si nos escribes</h3>
+              <p data-i18n="privacy.contactBody">
+                El único dato que recibimos es el que tú nos mandas por correo a
+                <strong>hello@delete-from.com</strong>. Lo usamos solo para responderte.
+                No lo compartimos con terceros ni te sumamos a ninguna lista.
+              </p>
+              <h3 data-i18n="privacy.thirdTitle">&gt; Terceros</h3>
+              <p data-i18n="privacy.thirdBody">
+                Las tipografías se cargan desde Google Fonts. Enlaces externos (itch.io,
+                Buy Me a Coffee) tienen sus propias políticas cuando los visitas.
+              </p>
+            </div>
+          </div>
         </div>
       </section>
     </main>
 
     <footer>
-      <div class="container footer-grid">
-        <div>
-          <div class="brand">
-            <img class="brand-logo brand-logo-light" src="assets/logo_modo_claro.png" alt="Delete-From Labs" />
-          <img class="brand-logo brand-logo-dark" src="assets/logo_modo_oscuro.png" alt="Delete-From Labs" aria-hidden="true" />
-            <span class="brand-text">DELETE-FROM LABS</span>
-          </div>
-          <p class="section-muted" style="margin-top: 0.75rem; font-size: 0.875rem;">Un lab de tecnología. Apps, automatización y hardware.</p>
-        </div>
-        <div>
-          <strong>Explorar</strong>
-          <div><a href="index.html#proyectos">Proyectos</a></div>
-          <div><a href="index.html#asesorias">Asesorías</a></div>
-          <div><a href="blog.html">Blog</a></div>
-        </div>
-        <div>
-          <strong>Contacto</strong>
-          <div><a href="index.html#contacto">Dame tu idea</a></div>
-          <div><a href="mailto:hello@delete-from.com">hello@delete-from.com</a></div>
-        </div>
-        <div>
-          <strong>Legal</strong>
-          <div><a href="privacy.html">Aviso de privacidad</a></div>
-          <div class="section-muted">© 2026 DELETE-FROM LABS</div>
-        </div>
+      <div class="footer-inner">
+        <span class="footer-copy">© 2026 DELETE-FROM STUDIO</span>
+        <nav class="footer-links" aria-label="Footer navigation">
+          <a href="index.html">Inicio</a>
+          <a href="devlog.html" data-i18n="nav.devlog">Devlog</a>
+          <a href="mailto:hello@delete-from.com">hello@delete-from.com</a>
+        </nav>
       </div>
     </footer>
 
-    <script src="app.js" defer></script>
+    <script src="script.js" defer></script>
   </body>
 </html>
