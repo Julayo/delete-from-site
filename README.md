@@ -11,18 +11,22 @@ Deploy directo a S3 + CloudFront via GitHub Actions (OIDC).
 
 ```
 /
-├── index.html       ← página única (hero, juegos, about, contacto)
-├── styles.css       ← design system completo
-├── script.js        ← toggle ES/EN, scroll behavior
+├── index.html       ← landing del estudio (hero, juegos, manifiesto/about, contacto)
+├── devlog.html      ← bitácora de desarrollo (posts del estudio)
+├── styles.css       ← design system completo (incluye estilos de devlog)
+├── script.js        ← toggle ES/EN (data-i18n), scroll behavior
 ├── 404.html
 ├── privacy.html
 ├── assets/          ← favicon y logos
-├── scripts/         ← utilidades de ops
+├── scripts/         ← utilidades de ops (oidc-setup, health-check)
 └── .github/
     └── workflows/
         ├── deploy.yml   ← sync S3 + invalidación CloudFront
         └── health.yml
 ```
+
+> Estudio indie de juegos hecho con **tiempos rescatados de la vida adulta**.
+> (Las páginas antiguas de la marca "Labs" —blog/servicios/pricing/tools— se retiraron.)
 
 ## Design system
 
