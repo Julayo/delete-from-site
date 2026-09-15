@@ -3,44 +3,42 @@
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>404 | DELETE-FROM STUDIO</title>
-    <meta name="description" content="Página no encontrada." />
-    <meta name="theme-color" content="#0f0f0f" />
+    <title>404 · DELETE-FROM STUDIO</title>
+    <meta name="robots" content="noindex" />
+    <meta name="theme-color" content="#0b0b0f" />
     <link rel="icon" href="assets/favicon.svg" type="image/svg+xml" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap"
-      rel="stylesheet"
-    />
+    <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&family=Space+Grotesk:wght@400;500;600;700&family=Space+Mono:wght@400;700&display=swap" rel="stylesheet" />
     <link rel="stylesheet" href="styles.css" />
   </head>
   <body>
     <header id="site-header">
-      <nav class="nav-inner">
-        <a class="logo" href="index.html">DELETE-FROM<br>STUDIO</a>
-        <ul class="nav-links" aria-label="Primary navigation">
-          <li><a href="index.html#games">Juegos</a></li>
-          <li><a href="index.html#about">About</a></li>
-          <li><a href="devlog.html">Devlog</a></li>
-          <li><a href="index.html#contact">Contacto</a></li>
+      <div class="wrap nav">
+        <a class="brand" href="index.html" aria-label="DELETE-FROM STUDIO">DELETE-<b>FROM</b><br>STUDIO</a>
+        <ul class="nav-links">
+          <li><a href="devlog.html" data-i18n="nav.devlog">Devlog</a></li>
+          <li><button id="lang-toggle" type="button" aria-label="Switch language">EN</button></li>
         </ul>
-      </nav>
+      </div>
     </header>
-
     <main>
-      <section class="section" style="min-height: 70vh; display: flex; align-items: center;">
-        <div class="section-inner section-inner--center" style="width: 100%;">
-          <h2 style="font-size: 2rem; margin-bottom: 1.5rem;">404</h2>
-          <p style="color: var(--muted); font-size: 0.8rem; margin-bottom: 2.5rem; letter-spacing: 0.08em;">
-            Esta página no existe.
-          </p>
-          <div class="cta-group" style="justify-content: center;">
-            <a class="btn btn-primary" href="index.html">← Volver al inicio</a>
-            <a class="btn btn-ghost" href="index.html#games">Ver juegos</a>
-          </div>
+      <section class="hero wrap" style="padding-block:7rem 5rem">
+        <p class="hero-tag">error 404</p>
+        <h1 style="font-size:clamp(2rem,10vw,4rem)">4<span class="accent">0</span>4</h1>
+        <p class="hero-sub">Ese espíritu ya fue exorcizado. La página no existe.</p>
+        <div class="hero-cta">
+          <a class="btn btn-primary" href="index.html">← Volver al inicio</a>
+          <a class="btn btn-ghost" href="devlog.html" data-i18n="nav.devlog">Devlog</a>
         </div>
       </section>
     </main>
+    <footer>
+      <div class="wrap foot">
+        <span class="copy">© 2026 DELETE-FROM STUDIO</span>
+        <nav><a href="index.html">Inicio</a></nav>
+      </div>
+    </footer>
+    <script src="script.js" defer></script>
   </body>
 </html>
