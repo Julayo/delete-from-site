@@ -3,143 +3,88 @@
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>Devlog | DELETE-FROM STUDIO</title>
-    <meta
-      name="description"
-      content="Bitácora de desarrollo del estudio. Juegos hechos con tiempos rescatados de la vida adulta."
-    />
-    <meta name="theme-color" content="#0f0f0f" />
+    <title>Devlog · DELETE-FROM STUDIO</title>
+    <meta name="description" content="Bitácora de desarrollo de DELETE-FROM STUDIO. Juegos hechos con tiempos rescatados de la vida adulta." />
+    <meta name="theme-color" content="#0b0b0f" />
     <meta property="og:title" content="Devlog · DELETE-FROM STUDIO" />
     <meta property="og:description" content="Bitácora de desarrollo: juegos hechos con tiempos rescatados de la vida adulta." />
     <meta property="og:type" content="website" />
-    <meta property="og:url" content="https://delete-from.com/devlog" />
     <link rel="canonical" href="https://delete-from.com/devlog" />
     <link rel="icon" href="assets/favicon.svg" type="image/svg+xml" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap"
-      rel="stylesheet"
-    />
+    <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&family=Space+Grotesk:wght@400;500;600;700&family=Space+Mono:wght@400;700&display=swap" rel="stylesheet" />
     <link rel="stylesheet" href="styles.css" />
   </head>
   <body>
 
     <header id="site-header">
-      <nav class="nav-inner">
-        <a class="logo" href="index.html" aria-label="DELETE-FROM STUDIO">DELETE-FROM<br>STUDIO</a>
-        <ul class="nav-links" aria-label="Primary navigation">
-          <li><a href="index.html#games" data-i18n="nav.games">Juegos</a></li>
-          <li><a href="index.html#about" data-i18n="nav.about">About</a></li>
+      <div class="wrap nav">
+        <a class="brand" href="index.html" aria-label="DELETE-FROM STUDIO">DELETE-<b>FROM</b><br>STUDIO</a>
+        <ul class="nav-links">
+          <li class="hide-sm"><a href="index.html#game" data-i18n="nav.game">Juego</a></li>
+          <li class="hide-sm"><a href="index.html#about" data-i18n="nav.about">Estudio</a></li>
           <li><a href="devlog.html" data-i18n="nav.devlog" aria-current="page">Devlog</a></li>
-          <li><a href="index.html#contact" data-i18n="nav.contact">Contacto</a></li>
+          <li class="hide-sm"><a href="index.html#contact" data-i18n="nav.contact">Contacto</a></li>
+          <li><button id="lang-toggle" type="button" aria-label="Switch language">EN</button></li>
         </ul>
-        <button id="lang-toggle" type="button" aria-label="Switch language">EN</button>
-      </nav>
+      </div>
     </header>
 
     <main>
-
-      <section class="hero">
-        <div class="hero-inner">
-          <p class="hero-tag" data-i18n="devlog.tag">bitácora de desarrollo</p>
-          <h1 class="hero-title">// DEVLOG</h1>
-          <p class="devlog-intro" data-i18n="devlog.intro">
-            Notas de desarrollo de un estudio que hace juegos con tiempos rescatados
-            de la vida adulta. Sin calendario, sin promesas — solo lo que se avanzó.
-          </p>
-        </div>
+      <section class="hero wrap" style="padding-block:4rem 2rem">
+        <p class="hero-tag" data-i18n="devlog.tag">bitácora de desarrollo</p>
+        <h1 style="font-size:clamp(1.4rem,5vw,2.4rem)">// DEVLOG</h1>
+        <p class="hero-sub" data-i18n="devlog.intro">Notas de desarrollo de un estudio que hace juegos con tiempos rescatados de la vida adulta. Sin calendario, sin promesas — solo lo que se avanzó.</p>
       </section>
 
-      <section class="section">
-        <div class="section-inner">
-          <div class="devlog-list">
+      <section class="section" style="padding-top:1rem">
+        <div class="wrap" style="max-width:760px">
 
-            <!-- ── POST 1 ─────────────────────────────── -->
-            <article class="devlog-post">
-              <header>
-                <span class="devlog-date">2026-09-10 · PINTADA</span>
-                <h2>Vertical slice de combate: yokai, telegrafía y reflejo</h2>
-                <div class="devlog-tags">
-                  <span>Godot 4</span><span>combate</span><span>game feel</span><span>IA enemiga</span>
-                </div>
-              </header>
-              <div class="devlog-body">
-                <p>
-                  PINTADA nació de una idea simple: un exorcista que no dispara, sino que
-                  <strong>devuelve</strong>. En vez de llenar la pantalla de balas propias, el juego
-                  se trata de leer al enemigo, esquivar apenas, y regresarle su propio ataque con el
-                  gohei. La referencia de cabecera es <em>Pocky &amp; Rocky</em>: combate honesto, legible,
-                  con alma retro.
-                </p>
-                <p>
-                  Este mes cerramos el <strong>vertical slice de combate</strong>: el bucle jugable completo,
-                  de principio a muerte y reintento. Esto es lo que quedó en pie.
-                </p>
+          <article class="post" id="vertical-slice">
+            <header>
+              <span class="date">2026-09-10 · PINTADA</span>
+              <h2>Vertical slice de combate: yokai, telegrafía y reflejo</h2>
+              <div class="tags"><span>Godot 4</span><span>combate</span><span>game feel</span><span>IA enemiga</span></div>
+            </header>
+            <div class="prose">
+              <p>PINTADA nació de una idea simple: un exorcista que no dispara, sino que <strong>devuelve</strong>. En vez de llenar la pantalla de balas propias, el juego se trata de leer al enemigo, esquivar apenas, y regresarle su propio ataque con el gohei. La referencia de cabecera es <em>Pocky &amp; Rocky</em>: combate honesto, legible, con alma retro.</p>
+              <p>Este mes cerramos el <strong>vertical slice de combate</strong>: el bucle jugable completo, de principio a muerte y reintento. Esto es lo que quedó en pie.</p>
 
-                <h3>&gt; Enemigos con personalidad, no esponjas de vida</h3>
-                <p>
-                  Tres arquetipos de yokai, cada uno pidiendo una respuesta distinta del jugador:
-                </p>
-                <ul>
-                  <li><strong>Shooter</strong> — dispara proyectiles a distancia; recompensa el reflejo con el gohei.</li>
-                  <li><strong>Charger</strong> — embiste; recompensa el <em>slide</em> de esquive en el último frame.</li>
-                  <li><strong>Bomber</strong> — lento y tanque, lanza orbes grandes; premia el timing del reflejo.</li>
-                </ul>
-                <p>
-                  Además un <strong>kite AI</strong>: los yokai orbitan al jugador manteniendo distancia y
-                  respetando las paredes, en vez de caminar en línea recta hacia la muerte.
-                </p>
+              <h3>&gt; Enemigos con personalidad, no esponjas de vida</h3>
+              <p>Tres arquetipos de yokai, cada uno pidiendo una respuesta distinta:</p>
+              <ul>
+                <li><strong>Shooter</strong> — dispara a distancia; recompensa el reflejo con el gohei.</li>
+                <li><strong>Charger</strong> — embiste; recompensa el <em>slide</em> de esquive en el último frame.</li>
+                <li><strong>Bomber</strong> — lento y tanque, lanza orbes grandes; premia el timing del reflejo.</li>
+              </ul>
+              <p>Encima, un <strong>kite AI</strong>: los yokai orbitan al jugador manteniendo distancia y respetando las paredes, en vez de caminar en línea recta hacia la muerte.</p>
 
-                <h3>&gt; Telegrafía = juego justo</h3>
-                <p>
-                  Ningún golpe sale de la nada. Cada ataque tiene una <strong>fase de wind-up</strong> con
-                  feedback visual antes de conectar, y hasta los <em>spawns</em> de enemigos se avisan con una
-                  runa de aviso. La regla es sagrada: si el jugador muere, que sepa exactamente por qué.
-                </p>
+              <h3>&gt; Telegrafía = juego justo</h3>
+              <p>Ningún golpe sale de la nada. Cada ataque tiene una <strong>fase de wind-up</strong> con feedback visual antes de conectar, y hasta los spawns de enemigos se avisan con una runa. La regla es sagrada: si el jugador muere, que sepa exactamente por qué.</p>
 
-                <h3>&gt; Puntaje que premia el riesgo</h3>
-                <p>
-                  El scoring no cuenta kills, cuenta <strong>estilo</strong>. Reflejar ataques encadenados
-                  dentro de una ventana de 2 segundos sube un <strong>multiplicador de combo</strong>. Y el
-                  <strong>graze</strong> — esquivar rozando el proyectil — da puntos por sí solo, empujando a
-                  jugar pegado al peligro en vez de lejos.
-                </p>
+              <h3>&gt; Puntaje que premia el riesgo</h3>
+              <p>El scoring no cuenta kills, cuenta <strong>estilo</strong>. Reflejar ataques encadenados dentro de una ventana de 2 segundos sube un <strong>multiplicador de combo</strong>. Y el <strong>graze</strong> — esquivar rozando el proyectil — da puntos por sí solo, empujando a jugar pegado al peligro en vez de lejos.</p>
 
-                <h3>&gt; Oleadas que escalan solas</h3>
-                <p>
-                  Un sistema de <strong>waves</strong> con composición creciente: primero puros Shooters,
-                  los Chargers entran en la ola 2, los Bombers en la 3. La curva de dificultad emerge de la
-                  fórmula, no de números pegados a mano.
-                </p>
+              <h3>&gt; Oleadas que escalan solas</h3>
+              <p>Un sistema de <strong>waves</strong> con composición creciente: primero puros Shooters, los Chargers entran en la ola 2, los Bombers en la 3. La curva de dificultad emerge de la fórmula, no de números pegados a mano.</p>
 
-                <h3>&gt; Feel primero, motor después</h3>
-                <p>
-                  Todo esto se validó en headless (700 frames sin errores) antes de pulir un solo pixel. La
-                  filosofía del estudio es <strong>feel-first</strong>: si el prototipo no se siente bien
-                  moviéndose y esquivando, ningún arte lo salva.
-                </p>
-                <p>
-                  Lo mejor: nada de esto salió de un fin de semana maratónico. Salió de
-                  <strong>power-hours sueltas</strong>, una a una, entre la pega y la casa. Así se construye
-                  acá.
-                </p>
-              </div>
-            </article>
+              <h3>&gt; Feel primero, motor después</h3>
+              <p>Todo esto se validó en headless (700 frames sin errores) antes de pulir un solo pixel. La filosofía del estudio es <strong>feel-first</strong>: si el prototipo no se siente bien moviéndose y esquivando, ningún arte lo salva.</p>
+              <p>Lo mejor: nada de esto salió de un fin de semana maratónico. Salió de <strong>power-hours sueltas</strong>, una a una, entre la pega y la casa. Así se construye acá.</p>
+            </div>
+          </article>
 
-            <p class="devlog-empty">&gt; Próximas entradas en camino…</p>
-
-          </div>
+          <p class="muted-note">&gt; Próximas entradas en camino…</p>
         </div>
       </section>
-
     </main>
 
     <footer>
-      <div class="footer-inner">
-        <span class="footer-copy">© 2026 DELETE-FROM STUDIO</span>
-        <nav class="footer-links" aria-label="Footer navigation">
-          <a href="index.html">Inicio</a>
+      <div class="wrap foot">
+        <span class="copy">© 2026 DELETE-FROM STUDIO</span>
+        <nav>
+          <a href="index.html" data-i18n="devlog.back">← Volver al inicio</a>
           <a href="https://deletefrom.itch.io" target="_blank" rel="noopener noreferrer">itch.io</a>
           <a href="privacy.html" data-i18n="footer.privacy">Privacidad</a>
         </nav>
